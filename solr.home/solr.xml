@@ -42,7 +42,7 @@
     <int name="connTimeout">${connTimeout:0}</int>
   </shardHandlerFactory>
 
-  <cores adminPath="/admin/cores">
+  <cores adminPath="/admin/cores" host="${host:}" hostPort="${jetty.port:8983}">
     <core name="collection1" instanceDir="collection1" dataDir="collection1/data"/>
   </cores>
 </solr>
