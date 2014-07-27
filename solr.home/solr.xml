@@ -26,7 +26,7 @@
    http://wiki.apache.org/solr/CoreAdmin
 -->
 
-<solr>
+<solr persistent="true" sharedLib="lib">
 
   <solrcloud>
     <str name="host">${host:}</str>
@@ -42,8 +42,8 @@
     <int name="connTimeout">${connTimeout:0}</int>
   </shardHandlerFactory>
 
-  <cores adminPath="/admin/cores" host="${host:}" hostPort="${jetty.port:}">
-    <core name="collection1"     instanceDir="collection1" dataDir="collection1/data"/>
+  <cores adminPath="/admin/cores">
+    <core name="collection1" instanceDir="collection1" dataDir="collection1/data"/>
   </cores>
 </solr>
 
