@@ -88,8 +88,8 @@
     <Connector port="8443" protocol="HTTP/1.1" SSLEnabled="true"
                maxThreads="150" scheme="https" secure="true"
                clientAuth="false" sslProtocol="TLS" />
-    -->
-
+    
+-->
     <!-- Define an AJP 1.3 Connector on port 8009 -->
     <!--Connector port="8009" protocol="AJP/1.3" redirectPort="8443" /-->
 
@@ -123,8 +123,8 @@
                resourceName="UserDatabase"/>
       </Realm>
 
-      <Host name="localhost"  appBase="webapps"
-            unpackWARs="false" autoDeploy="true">
+      <Host name="$OPENSHIFT_APP_DNS"  appBase="webapps"
+            unpackWARs="true" autoDeploy="true">
 
         <!-- SingleSignOn valve, share authentication between web applications
              Documentation at: /docs/config/valve.html -->

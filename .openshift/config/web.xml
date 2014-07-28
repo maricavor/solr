@@ -4390,7 +4390,7 @@
     </welcome-file-list>
 <env-entry>
         <env-entry-name>solr/home</env-entry-name>
-        <env-entry-value>../app-root/data/solr.home</env-entry-value>
+        <env-entry-value>$OPENSHIFT_DATA_DIR/solr.home</env-entry-value>
         <env-entry-type>java.lang.String</env-entry-type>
     </env-entry>
 </web-app>
