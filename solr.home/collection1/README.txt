@@ -23,7 +23,7 @@ should look like for a SolrCore
 It's not strictly necessary that you copy all of the files in this
 directory when setting up a new SolrCores, but it is recommended.
 
-
+#######################################
 Basic Directory Structure
 -------------------------
 
